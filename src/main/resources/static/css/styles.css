@@ -1,0 +1,19 @@
+.logo {
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.post-section {
+    margin-top: 20px;
+    padding-bottom: 30px;
+    width: 80%;
+}
+
+.post-breadcrumb {
+    background-color: #FFF;
+    padding-left: 0;
+}
+
+.post-card {
+    margin-top: 20px;
+}
