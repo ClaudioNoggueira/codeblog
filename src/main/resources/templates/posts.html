@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://thmeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -30,9 +30,22 @@
                 </ol>
             </nav>
 
-            <div class="card shadow-sm bg-white rounded post-card">
+            <div class="card shadow-sm bg-white rounded post-card" th:each="post : ${posts}">
                 <div class="card-body">
-                    Test
+                    <p class="card-subtitle mb-2 text-muted post-card-subtitle">
+                        <span th:text="${post.author}"></span>
+                        <span th:text="${post.date}"></span>
+                    </p>
+
+                    <h4 class="card-title post-card-title">
+                        <a href="#">
+                            <span th:text="${post.title}"></span>
+                        </a>
+                    </h4>
+
+                    <p class="card-text">
+                        <span th:utext="${#strings.abbreviate(post.content, 400)}"></span>
+                    </p>
                 </div>
             </div>
         </section>

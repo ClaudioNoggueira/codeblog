@@ -6,7 +6,7 @@
 .post-section {
     margin-top: 20px;
     padding-bottom: 30px;
-    width: 80%;
+    width: 60%;
 }
 
 .post-breadcrumb {
@@ -16,4 +16,14 @@
 
 .post-card {
     margin-top: 20px;
+}
+
+.post-card-subtitle {
+    font-size: 0.8rem;
+}
+
+.post-card-title {
+    color: black;
+    font-weight: bold;
+    padding-top: 5px;
 }
