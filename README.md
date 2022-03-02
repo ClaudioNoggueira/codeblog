@@ -1,6 +1,10 @@
 # codeblog
 Blog website with Spring boot
 
+## Login
+- Username: Claudio
+- Password: 123
+
 ### Features
 
 - Add post
