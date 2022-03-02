@@ -49,6 +49,7 @@ public class PostController {
     @PostMapping(value = "/compose")
     public String savePost(@Valid Post obj, BindingResult result, RedirectAttributes attributes) {
         if (result.hasErrors()) {
+            attributes.addFlashAttribute("error", "Required fields are not all filled in!");
             return "redirect:/compose";
         }
         obj.setDate(LocalDate.now());
