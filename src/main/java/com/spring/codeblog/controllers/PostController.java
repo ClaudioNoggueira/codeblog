@@ -25,6 +25,11 @@ public class PostController {
     @Autowired
     private PostService service;
 
+    @RequestMapping("/")
+    public String index() {
+        return "redirect:/posts";
+    }
+
     @RequestMapping(value = "/posts", method = RequestMethod.GET)
     public ModelAndView getPosts() {
         ModelAndView mv = new ModelAndView("posts");
